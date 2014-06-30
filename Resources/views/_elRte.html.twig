@@ -32,7 +32,7 @@
                 jQuery('<div id="myelfinder" />').elfinder({
                     url : '{{ path("elfinder_connector") }}',
                     lang : '{{ language }}',
-                    dialog : { width : 900, modal : true, title : 'Files' }, // open in dialog window
+                    dialog : { width : 900, modal : false, title : 'Files' }, // open in dialog window
                     closeOnEditorCallback : true, // close after file select
                     editorCallback : callback, // pass callback to file manager
 	            rememberLastDir : true,
